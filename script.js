@@ -28,9 +28,9 @@ const getRandomWord = () => {
 
 
 submitButton.addEventListener("click", async () => {
-    checkButton.diabled = true;
-	nextButton.diabled = true;
-	submitButton.diabled = true;
+    checkButton.disabled = true;
+	nextButton.disabled = true;
+	submitButton.disabled = true;
 	let submissionValue = userInput.value;
 	if(checkForMatch(submissionValue) === false){
 		if(submissionValue != ""){ //if input is not empty
@@ -41,8 +41,8 @@ submitButton.addEventListener("click", async () => {
 			globalBlob = blob;
 			const blobUrl = URL.createObjectURL(blob);
 			generatedImage.src = blobUrl;
-			checkButton.diabled = false;
-	        nextButton.diabled = false;
+			checkButton.disabled = false;
+	        nextButton.disabled = false;
 		});
 	 }
 	}else{
@@ -79,7 +79,7 @@ nextButton.addEventListener("click", () => {
 	userInput.placeholder = "Type Here...";
 	imageBox.style.backgroundImage = "";
 	generatedImage.src = "";
-	checkButton.diabled = false;
+	checkButton.disabled = false;
 	submitButton.disabled = false;
 });
 
