@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Fuzzy+Bubbles:wght@400;700&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Bungee+Spice&family=Fuzzy+Bubbles:wght@400;700&family=Nabla&display=swap');
+:root{
+    --India-Green: #398C06;
+    --Moonstone: #58A4B0;
+    --Delft-Blue: #363A59;
+    --Turquoise: #19E0C9;
+    --Light-Green: #A2FAA3;
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.start-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right, var(--Delft-Blue), var(--Moonstone), var(--Delft-Blue));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.start, .how-to-play, .credits, .back-button{
+    width: 45vmin;
+    height: 15vmin;
+    margin: 5vmin;
+    background-color: var(--Turquoise);
+    font-size: 6vmin;
+    color: var(--Delft-Blue);
+    border-radius: 5vmin;
+    font-family: Bungee Spice;
+}
+
+.title{
+    color: var(--Delft-Blue);
+    font-size: 10vmin;
+    text-align: center;
+    font-family: Nabla;
+}
+
+.start:hover, .how-to-play:hover, .credits:hover, .back-button:hover{
+    scale: 1.1;
+    transform: rotate(5deg);
+    filter: brightness();
+    cursor: pointer;
+}
+
+.credit{
+    font-size: 4vmin;
+    margin: 1vmin;
+    font-family: Bungee Spice;
+}
+
+.main-container{
+    height:100vh;
+    width:100%;
+    background:linear-gradient(to top right, var(--Delft-Blue), var(--Moonstone), var(--Delft-Blue));
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display:flex ;
+}
+
+.image-container{
+    height: 50vmin;
+    width: 50vmin;
+    border: solid black 1px;
+    border-radius:2vmin;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-size: cover;
+}
+
+.make-text{
+    font-family:Nabla;
+    font-size:8vmin;
+}
+
+.user-input{
+    width: 60vmin;
+    height: 5vmin;
+    padding: 0.5vmin;
+    background-color:white;
+    border: black;
+    border-radius: 1vmin;
+    font-size: 3vmin;
+    font-family: Bungee Spice;
+}
+
+.generated-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 2vmin;
+}
+
+.submit, .check, .next{
+    width: 12vmin;
+    height: 4vmin;
+    font-size: 2vmin;
+    border-radius: 0.5vmin;
+    border: none;
+}
+
+.submit:hover, .check:hover, .next:hover{
+    filter: brightness(90%);
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.instruction-container{
+    width: 60vmin;
+    height: 60vmin;
+    border: solid black 1px;
+    border-radius: 1vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmin;
+}
+
+.instructions{
+    font-size: 4vmin;
+    text-align: center;
+    font-family: Bungee Spice;
+}
+
+.instruction-word{
+    font-family: Nabla;
+    font-size: 5vmin;
+}
+
+.instruction-button{
+    width: fit-content;
+    padding: 0.5vmin;
+    height: 4vmin;
+    font-size: 2vmin;
+    border: solid black 1px;
+    border-radius: 0.5vmin;
+    background-color: aliceblue;
+}
